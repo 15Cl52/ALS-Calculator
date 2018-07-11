@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11B96EFF20F2F837004C0C02 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11B96EFE20F2F837004C0C02 /* Default-568h@2x.png */; };
+		11CA91D820F2FEF400D6A859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11CA91D720F2FEF400D6A859 /* Main.storyboard */; };
+		11CA91F920F4EFFA00D6A859 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA91F820F4EFFA00D6A859 /* PageViewController.swift */; };
+		11CA91FB20F4F94B00D6A859 /* LMNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA91FA20F4F94B00D6A859 /* LMNViewController.swift */; };
+		11CA91FD20F4F96700D6A859 /* FibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA91FC20F4F96700D6A859 /* FibViewController.swift */; };
+		11CA91FF20F4F97600D6A859 /* FasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA91FE20F4F97600D6A859 /* FasViewController.swift */; };
+		11CA920120F4F98800D6A859 /* NeuroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA920020F4F98800D6A859 /* NeuroViewController.swift */; };
 		11D6C48B20A6661700F28E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D6C48A20A6661700F28E94 /* AppDelegate.swift */; };
-		11D6C48D20A6661700F28E94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D6C48C20A6661700F28E94 /* ViewController.swift */; };
-		11D6C49020A6661700F28E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D6C48E20A6661700F28E94 /* Main.storyboard */; };
+		11D6C48D20A6661700F28E94 /* UMNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D6C48C20A6661700F28E94 /* UMNViewController.swift */; };
 		11D6C49220A6661900F28E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D6C49120A6661900F28E94 /* Assets.xcassets */; };
 		11D6C49520A6661900F28E94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D6C49320A6661900F28E94 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11B96EFE20F2F837004C0C02 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		11CA91D720F2FEF400D6A859 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		11CA91F820F4EFFA00D6A859 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		11CA91FA20F4F94B00D6A859 /* LMNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMNViewController.swift; sourceTree = "<group>"; };
+		11CA91FC20F4F96700D6A859 /* FibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibViewController.swift; sourceTree = "<group>"; };
+		11CA91FE20F4F97600D6A859 /* FasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FasViewController.swift; sourceTree = "<group>"; };
+		11CA920020F4F98800D6A859 /* NeuroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuroViewController.swift; sourceTree = "<group>"; };
 		11D6C48720A6661700F28E94 /* ALS Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ALS Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		11D6C48A20A6661700F28E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11D6C48C20A6661700F28E94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		11D6C48F20A6661700F28E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11D6C48A20A6661700F28E94 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11D6C48C20A6661700F28E94 /* UMNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMNViewController.swift; sourceTree = "<group>"; };
 		11D6C49120A6661900F28E94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11D6C49420A6661900F28E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11D6C49620A6661900F28E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,12 +66,18 @@
 		11D6C48920A6661700F28E94 /* ALS Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				11B96EFE20F2F837004C0C02 /* Default-568h@2x.png */,
+				11D6C49620A6661900F28E94 /* Info.plist */,
 				11D6C48A20A6661700F28E94 /* AppDelegate.swift */,
-				11D6C48C20A6661700F28E94 /* ViewController.swift */,
-				11D6C48E20A6661700F28E94 /* Main.storyboard */,
+				11CA91D720F2FEF400D6A859 /* Main.storyboard */,
+				11CA91F820F4EFFA00D6A859 /* PageViewController.swift */,
+				11D6C48C20A6661700F28E94 /* UMNViewController.swift */,
+				11CA91FA20F4F94B00D6A859 /* LMNViewController.swift */,
+				11CA91FC20F4F96700D6A859 /* FibViewController.swift */,
+				11CA91FE20F4F97600D6A859 /* FasViewController.swift */,
+				11CA920020F4F98800D6A859 /* NeuroViewController.swift */,
 				11D6C49120A6661900F28E94 /* Assets.xcassets */,
 				11D6C49320A6661900F28E94 /* LaunchScreen.storyboard */,
-				11D6C49620A6661900F28E94 /* Info.plist */,
 			);
 			path = "ALS Calculator";
 			sourceTree = "<group>";
@@ -123,8 +141,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D6C49520A6661900F28E94 /* LaunchScreen.storyboard in Resources */,
+				11B96EFF20F2F837004C0C02 /* Default-568h@2x.png in Resources */,
 				11D6C49220A6661900F28E94 /* Assets.xcassets in Resources */,
-				11D6C49020A6661700F28E94 /* Main.storyboard in Resources */,
+				11CA91D820F2FEF400D6A859 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +154,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11D6C48D20A6661700F28E94 /* ViewController.swift in Sources */,
+				11CA91FD20F4F96700D6A859 /* FibViewController.swift in Sources */,
+				11CA91FB20F4F94B00D6A859 /* LMNViewController.swift in Sources */,
+				11CA91F920F4EFFA00D6A859 /* PageViewController.swift in Sources */,
+				11CA91FF20F4F97600D6A859 /* FasViewController.swift in Sources */,
+				11D6C48D20A6661700F28E94 /* UMNViewController.swift in Sources */,
 				11D6C48B20A6661700F28E94 /* AppDelegate.swift in Sources */,
+				11CA920120F4F98800D6A859 /* NeuroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		11D6C48E20A6661700F28E94 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11D6C48F20A6661700F28E94 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		11D6C49320A6661900F28E94 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,7 +296,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ALS Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,6 +306,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ALScalculator.ALS-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,7 +316,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ALS Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ALScalculator.ALS-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
