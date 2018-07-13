@@ -12,7 +12,7 @@ import UIKit
 class PageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate  {
    
     lazy var viewControllerList:[UIViewController] = {
-        // Creating list of view contollers we will be using and instantiating them
+        // Creating array of view contollers we will be using and instantiating them
         
         let sb = UIStoryboard(name: "Main", bundle: nil)
         
@@ -25,6 +25,8 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
         return [vc1, vc2, vc3, vc4, vc5]
     }()
     
+    var pageControl = UIPageControl()
+    
     override func viewDidLoad() {
         // Do any additional setup after loading the view.
         super.viewDidLoad()
@@ -35,8 +37,23 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
             //Checks IF there are any view controllers in the list. If one exists,
             
             self.setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil) //setViewControllers is part of page view controller's functions
-
         }
+        
+        self.delegate = self
+        configurePageControl()
+        
+    }
+    
+    func configurePageControl() {
+        pageControl = UIPageControl(frame: CGRect(x: 0, y: UIScreen.main.bounds.maxY - 50, width: UIScreen.main.bounds.width, height: 50))
+        pageControl.numberOfPages = viewControllerList.count
+        pageControl.currentPage = 0
+        pageControl.tintColor = UIColor.black
+        pageControl.pageIndicatorTintColor = UIColor.white
+        pageControl.currentPageIndicatorTintColor = UIColor.black
+        self.view.addSubview(pageControl)
+        
+        
     }
     
 
@@ -49,9 +66,13 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
         
         let previousIndex = vcIndex - 1 //get index of view controller before current one
         
-        guard previousIndex >= 0 else {return nil}
+        guard previousIndex >= 0 else {
+            return nil  //prevents swiping through indefinitely (doesnt loop back to last page)
+        }
         
-        guard viewControllerList.count > previousIndex else {return nil}
+        guard viewControllerList.count > previousIndex else {
+            return nil
+        }
         
         return viewControllerList[previousIndex]
         
@@ -65,13 +86,22 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
         
         let nextIndex = vcIndex + 1
         
-        guard viewControllerList.count != nextIndex else {return nil}
+        guard viewControllerList.count != nextIndex else {
+            return nil
+        }
         
-        guard viewControllerList.count > nextIndex else {return nil}
+        guard viewControllerList.count > nextIndex else {
+            return nil
+        }
         
         return viewControllerList[nextIndex]
         
     }
     
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+        let pageContentViewController = pageViewController.viewControllers![0]
+        self.pageControl.currentPage = viewControllerList.index(of: pageContentViewController)!
+    }
 
 }
