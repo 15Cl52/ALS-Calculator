@@ -1,5 +1,5 @@
 //
-//  NeuroViewController.swift
+//  ResultViewController.swift
 //  ALS Calculator
 //
 //  Created by Cassandra Lam on 2018-07-13.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NeuroViewController: UIViewController {
+class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

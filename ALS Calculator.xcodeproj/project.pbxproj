@@ -7,30 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1192E8A220F87D19008B4B48 /* UmnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192E8A120F87D19008B4B48 /* UmnViewController.swift */; };
+		1192E8A420F87D24008B4B48 /* LmnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192E8A320F87D24008B4B48 /* LmnViewController.swift */; };
+		1192E8A620F87D2C008B4B48 /* FibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192E8A520F87D2C008B4B48 /* FibViewController.swift */; };
+		1192E8A820F8BDE9008B4B48 /* FasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192E8A720F8BDE9008B4B48 /* FasViewController.swift */; };
+		1192E8AA20F8BDF2008B4B48 /* NeuroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192E8A920F8BDF2008B4B48 /* NeuroViewController.swift */; };
+		1192E8AC20F8C0DD008B4B48 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192E8AB20F8C0DD008B4B48 /* ResultViewController.swift */; };
 		11B96EFF20F2F837004C0C02 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11B96EFE20F2F837004C0C02 /* Default-568h@2x.png */; };
 		11CA91D820F2FEF400D6A859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11CA91D720F2FEF400D6A859 /* Main.storyboard */; };
 		11CA91F920F4EFFA00D6A859 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA91F820F4EFFA00D6A859 /* PageViewController.swift */; };
-		11CA91FB20F4F94B00D6A859 /* LMNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA91FA20F4F94B00D6A859 /* LMNViewController.swift */; };
-		11CA91FD20F4F96700D6A859 /* FibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA91FC20F4F96700D6A859 /* FibViewController.swift */; };
-		11CA91FF20F4F97600D6A859 /* FasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA91FE20F4F97600D6A859 /* FasViewController.swift */; };
-		11CA920120F4F98800D6A859 /* NeuroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA920020F4F98800D6A859 /* NeuroViewController.swift */; };
 		11D6C48B20A6661700F28E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D6C48A20A6661700F28E94 /* AppDelegate.swift */; };
-		11D6C48D20A6661700F28E94 /* UMNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D6C48C20A6661700F28E94 /* UMNViewController.swift */; };
 		11D6C49220A6661900F28E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D6C49120A6661900F28E94 /* Assets.xcassets */; };
 		11D6C49520A6661900F28E94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D6C49320A6661900F28E94 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1192E8A120F87D19008B4B48 /* UmnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmnViewController.swift; sourceTree = "<group>"; };
+		1192E8A320F87D24008B4B48 /* LmnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LmnViewController.swift; sourceTree = "<group>"; };
+		1192E8A520F87D2C008B4B48 /* FibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibViewController.swift; sourceTree = "<group>"; };
+		1192E8A720F8BDE9008B4B48 /* FasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FasViewController.swift; sourceTree = "<group>"; };
+		1192E8A920F8BDF2008B4B48 /* NeuroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuroViewController.swift; sourceTree = "<group>"; };
+		1192E8AB20F8C0DD008B4B48 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		11B96EFE20F2F837004C0C02 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		11CA91D720F2FEF400D6A859 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		11CA91F820F4EFFA00D6A859 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		11CA91FA20F4F94B00D6A859 /* LMNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMNViewController.swift; sourceTree = "<group>"; };
-		11CA91FC20F4F96700D6A859 /* FibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibViewController.swift; sourceTree = "<group>"; };
-		11CA91FE20F4F97600D6A859 /* FasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FasViewController.swift; sourceTree = "<group>"; };
-		11CA920020F4F98800D6A859 /* NeuroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuroViewController.swift; sourceTree = "<group>"; };
 		11D6C48720A6661700F28E94 /* ALS Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ALS Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D6C48A20A6661700F28E94 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11D6C48C20A6661700F28E94 /* UMNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMNViewController.swift; sourceTree = "<group>"; };
 		11D6C49120A6661900F28E94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11D6C49420A6661900F28E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11D6C49620A6661900F28E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,11 +73,12 @@
 				11D6C48A20A6661700F28E94 /* AppDelegate.swift */,
 				11CA91D720F2FEF400D6A859 /* Main.storyboard */,
 				11CA91F820F4EFFA00D6A859 /* PageViewController.swift */,
-				11D6C48C20A6661700F28E94 /* UMNViewController.swift */,
-				11CA91FA20F4F94B00D6A859 /* LMNViewController.swift */,
-				11CA91FC20F4F96700D6A859 /* FibViewController.swift */,
-				11CA91FE20F4F97600D6A859 /* FasViewController.swift */,
-				11CA920020F4F98800D6A859 /* NeuroViewController.swift */,
+				1192E8A120F87D19008B4B48 /* UmnViewController.swift */,
+				1192E8A320F87D24008B4B48 /* LmnViewController.swift */,
+				1192E8A520F87D2C008B4B48 /* FibViewController.swift */,
+				1192E8A720F8BDE9008B4B48 /* FasViewController.swift */,
+				1192E8A920F8BDF2008B4B48 /* NeuroViewController.swift */,
+				1192E8AB20F8C0DD008B4B48 /* ResultViewController.swift */,
 				11D6C49120A6661900F28E94 /* Assets.xcassets */,
 				11D6C49320A6661900F28E94 /* LaunchScreen.storyboard */,
 			);
@@ -154,13 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11CA91FD20F4F96700D6A859 /* FibViewController.swift in Sources */,
-				11CA91FB20F4F94B00D6A859 /* LMNViewController.swift in Sources */,
+				1192E8A620F87D2C008B4B48 /* FibViewController.swift in Sources */,
+				1192E8A420F87D24008B4B48 /* LmnViewController.swift in Sources */,
+				1192E8A220F87D19008B4B48 /* UmnViewController.swift in Sources */,
+				1192E8AC20F8C0DD008B4B48 /* ResultViewController.swift in Sources */,
+				1192E8A820F8BDE9008B4B48 /* FasViewController.swift in Sources */,
 				11CA91F920F4EFFA00D6A859 /* PageViewController.swift in Sources */,
-				11CA91FF20F4F97600D6A859 /* FasViewController.swift in Sources */,
-				11D6C48D20A6661700F28E94 /* UMNViewController.swift in Sources */,
 				11D6C48B20A6661700F28E94 /* AppDelegate.swift in Sources */,
-				11CA920120F4F98800D6A859 /* NeuroViewController.swift in Sources */,
+				1192E8AA20F8BDF2008B4B48 /* NeuroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
