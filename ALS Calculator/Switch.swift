@@ -6,6 +6,7 @@
 //  Copyright © 2018 Cassandra Lam. All rights reserved.
 //
 
+
 //This file will hold all global functions and variables that I want to use in mutliple view controller classes.
 
 import Foundation
