@@ -117,21 +117,39 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="REV-C6-Wa9">
                                         <rect key="frame" x="345" y="56" width="51" height="31"/>
-                                    </switch>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="r9A-8w-ehz">
-                                        <rect key="frame" x="345" y="389" width="51" height="31"/>
-                                    </switch>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="C9u-xR-IJJ">
-                                        <rect key="frame" x="345" y="492" width="51" height="31"/>
-                                    </switch>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oZR-ZK-zP4">
-                                        <rect key="frame" x="345" y="294" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="umnBulbAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="pyz-bE-n7Q"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g6n-6v-hh5">
                                         <rect key="frame" x="345" y="136" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="umnCervAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="2Q1-Hx-rch"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rKR-ex-Ywr">
                                         <rect key="frame" x="345" y="215" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="umnThorAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="M2e-0J-zxp"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oZR-ZK-zP4">
+                                        <rect key="frame" x="345" y="294" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="umnLumAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="C5E-2g-oxQ"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="r9A-8w-ehz">
+                                        <rect key="frame" x="345" y="389" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="umnGeneAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="CBi-vD-bum"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="C9u-xR-IJJ">
+                                        <rect key="frame" x="345" y="492" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="umnRosAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="mJK-Ox-aM4"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -187,6 +205,14 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="umnBulbOutlet" destination="REV-C6-Wa9" id="XMy-Wt-GIO"/>
+                        <outlet property="umnCervOutlet" destination="g6n-6v-hh5" id="d07-MJ-spk"/>
+                        <outlet property="umnGeneOutlet" destination="r9A-8w-ehz" id="Oi9-Jj-wth"/>
+                        <outlet property="umnLumOutlet" destination="oZR-ZK-zP4" id="9QM-bR-FF8"/>
+                        <outlet property="umnRosOutlet" destination="C9u-xR-IJJ" id="xr8-fK-faU"/>
+                        <outlet property="umnThorOutlet" destination="rKR-ex-Ywr" id="y1h-Da-NrK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -267,17 +293,29 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Sim-Nw-m59">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Sim-Nw-m59" userLabel="Lmn Bulb Outlet">
                                         <rect key="frame" x="345" y="56" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="lmnBulbAction:" destination="6kP-IH-Xjl" eventType="valueChanged" id="Us4-3c-xH5"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dS6-TJ-r6Z">
                                         <rect key="frame" x="345" y="294" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="lmnLumbAction:" destination="6kP-IH-Xjl" eventType="valueChanged" id="JGN-gz-etp"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NBX-f3-d9R">
                                         <rect key="frame" x="345" y="136" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="lmnCervAction:" destination="6kP-IH-Xjl" eventType="valueChanged" id="DKN-IQ-eM5"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZXU-39-JN9">
                                         <rect key="frame" x="345" y="215" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="lmnThorAction:" destination="6kP-IH-Xjl" eventType="valueChanged" id="b9l-7g-cLF"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -325,10 +363,16 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="lmnBulbOutlet" destination="Sim-Nw-m59" id="pO1-Nw-QUV"/>
+                        <outlet property="lmnCervOutlet" destination="NBX-f3-d9R" id="mgQ-Td-bMI"/>
+                        <outlet property="lmnLumbOutlet" destination="dS6-TJ-r6Z" id="6nm-f4-ZYZ"/>
+                        <outlet property="lmnThorOutlet" destination="ZXU-39-JN9" id="jf0-6Y-gWa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2eN-s0-0yl" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="891" y="137"/>
+            <point key="canvasLocation" x="904" y="137"/>
         </scene>
         <!--Fib View Controller-->
         <scene sceneID="3EN-Ti-8Ue">
