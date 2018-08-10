@@ -118,37 +118,37 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="REV-C6-Wa9">
                                         <rect key="frame" x="345" y="56" width="51" height="31"/>
                                         <connections>
-                                            <action selector="umnBulbAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="pyz-bE-n7Q"/>
+                                            <action selector="umnBulbAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="eNw-Xi-5Il"/>
                                         </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g6n-6v-hh5">
                                         <rect key="frame" x="345" y="136" width="51" height="31"/>
                                         <connections>
-                                            <action selector="umnCervAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="2Q1-Hx-rch"/>
+                                            <action selector="umnCervAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="MKW-MU-ITr"/>
                                         </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rKR-ex-Ywr">
                                         <rect key="frame" x="345" y="215" width="51" height="31"/>
                                         <connections>
-                                            <action selector="umnThorAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="M2e-0J-zxp"/>
+                                            <action selector="umnThorAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="DVe-MI-m8F"/>
                                         </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oZR-ZK-zP4">
                                         <rect key="frame" x="345" y="294" width="51" height="31"/>
                                         <connections>
-                                            <action selector="umnLumAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="C5E-2g-oxQ"/>
+                                            <action selector="umnLumbAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="gGM-a3-mHg"/>
                                         </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="r9A-8w-ehz">
                                         <rect key="frame" x="345" y="389" width="51" height="31"/>
                                         <connections>
-                                            <action selector="umnGeneAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="CBi-vD-bum"/>
+                                            <action selector="umnGeneAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="38s-4h-OcE"/>
                                         </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="C9u-xR-IJJ">
                                         <rect key="frame" x="345" y="492" width="51" height="31"/>
                                         <connections>
-                                            <action selector="umnRosAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="mJK-Ox-aM4"/>
+                                            <action selector="umnRosAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="yxz-qT-poY"/>
                                         </connections>
                                     </switch>
                                 </subviews>
@@ -206,12 +206,12 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="umnBulbOutlet" destination="REV-C6-Wa9" id="XMy-Wt-GIO"/>
-                        <outlet property="umnCervOutlet" destination="g6n-6v-hh5" id="d07-MJ-spk"/>
-                        <outlet property="umnGeneOutlet" destination="r9A-8w-ehz" id="Oi9-Jj-wth"/>
-                        <outlet property="umnLumOutlet" destination="oZR-ZK-zP4" id="9QM-bR-FF8"/>
-                        <outlet property="umnRosOutlet" destination="C9u-xR-IJJ" id="xr8-fK-faU"/>
-                        <outlet property="umnThorOutlet" destination="rKR-ex-Ywr" id="y1h-Da-NrK"/>
+                        <outlet property="umnBulbOutlet" destination="REV-C6-Wa9" id="Vy4-G1-Q5C"/>
+                        <outlet property="umnCervOutlet" destination="g6n-6v-hh5" id="CCV-tu-sXt"/>
+                        <outlet property="umnGeneOutlet" destination="r9A-8w-ehz" id="r0T-jh-4u7"/>
+                        <outlet property="umnLumbOutlet" destination="oZR-ZK-zP4" id="cjt-1S-XLg"/>
+                        <outlet property="umnRosOutlet" destination="C9u-xR-IJJ" id="HdG-cn-4pz"/>
+                        <outlet property="umnThorOutlet" destination="rKR-ex-Ywr" id="67O-5t-1Ps"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -1,5 +1,5 @@
 //
-//  UmnViewController.swift
+//  UmnViewController.swift/Users/Cassandra/Desktop/ALS Calculator App/ALS Calculator/ALS Calculator.xcodeproj
 //  ALS Calculator
 //
 //  Created by Cassandra Lam on 2018-07-13.
@@ -9,7 +9,7 @@
 import UIKit
 
 enum typeOfSwitch : Int{
-    case Bulb, Cerv, Thor, Lum, Gene, Ros
+    case Bulb, Cerv, Thor, Lumb, Gene, Ros
 }
 
 func checkSwitch (switchOutlet: UISwitch, symptomArray: inout [Bool], symptomLocation: typeOfSwitch){
@@ -26,27 +26,30 @@ func checkSwitch (switchOutlet: UISwitch, symptomArray: inout [Bool], symptomLoc
 }
 
 class UmnViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-//Store current switch bool states in an array designated for the umn view controller only:
+    
+    //Store current switch bool states in an array designated for the umn view controller only:
     var umnSwitchStates = [Bool](repeating: false, count: 6) //6 switches total on UMN view controller
+    
+    
+    
+    
+    
     
     @IBOutlet weak var umnBulbOutlet: UISwitch!
     @IBAction func umnBulbAction(_ sender: UISwitch) {
         checkSwitch(switchOutlet: umnBulbOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Bulb)   //stores the current bulbar switch bool state to array umnSwitchStates
     }
-    
-    
-    
+
     @IBOutlet weak var umnCervOutlet: UISwitch!
     @IBAction func umnCervAction(_ sender: UISwitch) {
         checkSwitch(switchOutlet: umnCervOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Cerv)
@@ -57,9 +60,9 @@ class UmnViewController: UIViewController {
         checkSwitch(switchOutlet: umnThorOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Thor)
     }
 
-    @IBOutlet weak var umnLumOutlet: UISwitch!
-    @IBAction func umnLumAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: umnLumOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Lum)
+    @IBOutlet weak var umnLumbOutlet: UISwitch!
+    @IBAction func umnLumbAction(_ sender: UISwitch) {
+        checkSwitch(switchOutlet: umnLumbOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Lumb)
     }
 
     @IBOutlet weak var umnGeneOutlet: UISwitch!
@@ -72,5 +75,5 @@ class UmnViewController: UIViewController {
         checkSwitch(switchOutlet: umnRosOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Ros)
     }
 
-
+    
 }
