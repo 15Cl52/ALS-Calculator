@@ -24,8 +24,6 @@ class LmnViewController: UIViewController {
     
 //Store current switch bool states in an array designated for the umn view controller only:
     
-    var lmnSwitchStates = [Bool](repeating: false, count: 4)
-    
     @IBOutlet weak var lmnBulbOutlet: UISwitch!
     @IBAction func lmnBulbAction(_ sender: UISwitch) {
         checkSwitch(switchOutlet: lmnBulbOutlet, symptomArray: &lmnSwitchStates, symptomLocation: typeOfSwitch.Bulb)
@@ -47,3 +45,7 @@ class LmnViewController: UIViewController {
     }
     
 }
+
+
+
+
