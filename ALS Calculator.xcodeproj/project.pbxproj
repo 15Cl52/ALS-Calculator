@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110F658D211D27060084864E /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110F658C211D27060084864E /* Switch.swift */; };
 		1121965E211C1C6C007ED8F4 /* LmnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121965D211C1C6C007ED8F4 /* LmnViewController.swift */; };
 		11219666211D1813007ED8F4 /* UmnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11219665211D1813007ED8F4 /* UmnViewController.swift */; };
 		1192E8A620F87D2C008B4B48 /* FibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192E8A520F87D2C008B4B48 /* FibViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		110F658C211D27060084864E /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
 		1121965D211C1C6C007ED8F4 /* LmnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LmnViewController.swift; sourceTree = "<group>"; };
 		11219665211D1813007ED8F4 /* UmnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmnViewController.swift; sourceTree = "<group>"; };
 		1192E8A520F87D2C008B4B48 /* FibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				11D6C49620A6661900F28E94 /* Info.plist */,
 				11D6C48A20A6661700F28E94 /* AppDelegate.swift */,
 				11CA91D720F2FEF400D6A859 /* Main.storyboard */,
+				110F658C211D27060084864E /* Switch.swift */,
 				11CA91F820F4EFFA00D6A859 /* PageViewController.swift */,
 				11219665211D1813007ED8F4 /* UmnViewController.swift */,
 				1121965D211C1C6C007ED8F4 /* LmnViewController.swift */,
@@ -169,6 +172,7 @@
 				11CA91F920F4EFFA00D6A859 /* PageViewController.swift in Sources */,
 				11D6C48B20A6661700F28E94 /* AppDelegate.swift in Sources */,
 				1192E8AA20F8BDF2008B4B48 /* NeuroViewController.swift in Sources */,
+				110F658D211D27060084864E /* Switch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

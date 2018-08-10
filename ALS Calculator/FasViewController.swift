@@ -21,7 +21,7 @@ class FasViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    var fasSwitchStates = [Bool](repeating: false, count: 4)
+
     
     @IBOutlet weak var fasBulbOutlet: UISwitch!
     @IBAction func fasBulbAction(_ sender: UISwitch) {

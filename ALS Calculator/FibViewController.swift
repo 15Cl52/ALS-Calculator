@@ -21,8 +21,7 @@ class FibViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    var fibSwitchStates = [Bool](repeating: false, count: 4)
-    
+
     @IBOutlet weak var fibBulbOutlet: UISwitch!
     @IBAction func fibBulbAction(_ sender: UISwitch) {
         checkSwitch(switchOutlet: fibBulbOutlet, symptomArray: &fibSwitchStates, symptomLocation: typeOfSwitch.Bulb)

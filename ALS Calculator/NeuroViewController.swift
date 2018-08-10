@@ -21,7 +21,7 @@ class NeuroViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    var neuroSwitchStates = [Bool](repeating: false, count: 4)
+    
     
     @IBOutlet weak var neuroBulbOutlet: UISwitch!
     @IBAction func neuroBulbAction(_ sender: UISwitch) {
