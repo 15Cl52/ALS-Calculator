@@ -8,24 +8,6 @@
 
 import UIKit
 
-enum typeOfSwitch : Int{
-    //Certain switch type corresponds to certain integer which we use to index symptomArrray so we can store the bool state of each switch
-    case Bulb, Cerv, Thor, Lumb, Gene, Ros
-    }
-
-func checkSwitch (switchOutlet: UISwitch, symptomArray: inout [Bool], symptomLocation: typeOfSwitch){
-    //Global function that checks switch state and stores that value in desired array that holds all switch values for that view controller
-    
-    if switchOutlet.isOn == true {
-        symptomArray[symptomLocation.rawValue] = true   //depending on switch, bool value is placed at corresponding array index
-        print(symptomArray)
-    }
-    else{
-        symptomArray[symptomLocation.rawValue] = false
-        print(symptomArray)
-    }
-}
-
 class UmnViewController: UIViewController {
     
     override func viewDidLoad() {
