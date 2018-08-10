@@ -9,8 +9,9 @@
 import UIKit
 
 enum typeOfSwitch : Int{
+    //Certain switch type corresponds to certain integer which we use to index symptomArrray so we can store the bool state of each switch
     case Bulb, Cerv, Thor, Lumb, Gene, Ros
-}
+    }
 
 func checkSwitch (switchOutlet: UISwitch, symptomArray: inout [Bool], symptomLocation: typeOfSwitch){
     //Global function that checks switch state and stores that value in desired array that holds all switch values for that view controller
@@ -39,11 +40,6 @@ class UmnViewController: UIViewController {
     
     //Store current switch bool states in an array designated for the umn view controller only:
     var umnSwitchStates = [Bool](repeating: false, count: 6) //6 switches total on UMN view controller
-    
-    
-    
-    
-    
     
     @IBOutlet weak var umnBulbOutlet: UISwitch!
     @IBAction func umnBulbAction(_ sender: UISwitch) {

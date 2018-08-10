@@ -451,15 +451,27 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t25-vd-VA0">
                                         <rect key="frame" x="345" y="56" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="fibBulbAction:" destination="LtO-FN-cYk" eventType="valueChanged" id="BWC-ab-FsP"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3e1-7F-SSq">
                                         <rect key="frame" x="345" y="294" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="fibLumbAction:" destination="LtO-FN-cYk" eventType="valueChanged" id="hdR-1y-9RA"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gor-M1-rKF">
                                         <rect key="frame" x="345" y="136" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="fibCervAction:" destination="LtO-FN-cYk" eventType="valueChanged" id="O5p-IN-Ijw"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ja5-CH-3GW">
                                         <rect key="frame" x="345" y="215" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="fibThorAction:" destination="LtO-FN-cYk" eventType="valueChanged" id="eNK-J2-xeJ"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -507,6 +519,12 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="fibBulbOutlet" destination="t25-vd-VA0" id="Gav-8C-QU1"/>
+                        <outlet property="fibCervOutlet" destination="Gor-M1-rKF" id="v9e-d0-8Ws"/>
+                        <outlet property="fibLumbOutlet" destination="3e1-7F-SSq" id="mKL-X4-brZ"/>
+                        <outlet property="fibThorOutlet" destination="Ja5-CH-3GW" id="wQl-ju-otz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XoO-yG-V9L" sceneMemberID="firstResponder"/>
             </objects>

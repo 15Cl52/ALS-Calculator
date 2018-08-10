@@ -21,15 +21,27 @@ class FasViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    var fasSwitchStates = [Bool](repeating: false, count: 4)
+    
+    @IBOutlet weak var fasBulbOutlet: UISwitch!
+    @IBAction func fasBulbAction(_ sender: UISwitch) {
+        checkSwitch(switchOutlet: fasBulbOutlet, symptomArray: &fasSwitchStates, symptomLocation: typeOfSwitch.Bulb)
     }
-    */
+    
+    @IBOutlet weak var fasCervOutlet: UISwitch!
+    @IBAction func fasCervAction(_ sender: UISwitch) {
+        checkSwitch(switchOutlet: fasCervOutlet, symptomArray: &fasSwitchStates, symptomLocation: typeOfSwitch.Cerv)
+    }
+    
+    @IBOutlet weak var fasThorOutlet: UISwitch!
+    @IBAction func fasThorAction(_ sender: UISwitch) {
+        checkSwitch(switchOutlet: fasThorOutlet, symptomArray: &fasSwitchStates, symptomLocation: typeOfSwitch.Thor)
+    }
+    
+    @IBOutlet weak var fasLumbOutlet: UISwitch!
+    @IBAction func fasLumbAction(_ sender: UISwitch) {
+        checkSwitch(switchOutlet: fasLumbOutlet, symptomArray: &fasSwitchStates, symptomLocation: typeOfSwitch.Lumb)
+    }
+
 
 }
