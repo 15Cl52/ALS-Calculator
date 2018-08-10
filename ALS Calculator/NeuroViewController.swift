@@ -21,15 +21,28 @@ class NeuroViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    var neuroSwitchStates = [Bool](repeating: false, count: 4)
+    
+    @IBOutlet weak var neuroBulbOutlet: UISwitch!
+    @IBAction func neuroBulbAction(_ sender: UISwitch) {
+        checkSwitch(switchOutlet: neuroBulbOutlet, symptomArray: &neuroSwitchStates, symptomLocation: typeOfSwitch.Bulb)
     }
-    */
+    
+    @IBOutlet weak var neuroCervOutlet: UISwitch!
+    @IBAction func neuroCervAction(_ sender: UISwitch) {
+        checkSwitch(switchOutlet: neuroCervOutlet, symptomArray: &neuroSwitchStates, symptomLocation: typeOfSwitch.Cerv)
+    }
+    
+    @IBOutlet weak var neuroThorOutlet: UISwitch!
+    @IBAction func neuroThorAction(_ sender: UISwitch) {
+        checkSwitch(switchOutlet: neuroThorOutlet, symptomArray: &neuroSwitchStates, symptomLocation: typeOfSwitch.Thor)
+    }
+    
+    @IBOutlet weak var neuroLumbOutlet: UISwitch!
+    @IBAction func neuroLumbAction(_ sender: UISwitch) {
+        checkSwitch(switchOutlet: neuroLumbOutlet, symptomArray: &neuroSwitchStates, symptomLocation: typeOfSwitch.Lumb)
+    }
+    
+
 
 }

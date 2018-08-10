@@ -607,15 +607,27 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aSL-94-SD5">
                                         <rect key="frame" x="345" y="56" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="fasBulbAction:" destination="NqR-a9-las" eventType="valueChanged" id="QEp-ja-dyi"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0La-Se-ItU">
                                         <rect key="frame" x="345" y="294" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="fasLumbAction:" destination="NqR-a9-las" eventType="valueChanged" id="Nhg-vi-8qL"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZH5-NI-OPx">
                                         <rect key="frame" x="345" y="136" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="fasCervAction:" destination="NqR-a9-las" eventType="valueChanged" id="ivs-7h-QGL"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DEr-sf-rtF">
                                         <rect key="frame" x="345" y="215" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="fasThorAction:" destination="NqR-a9-las" eventType="valueChanged" id="u4t-zB-Ikd"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -663,6 +675,12 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="fasBulbOutlet" destination="aSL-94-SD5" id="YDM-GT-l6e"/>
+                        <outlet property="fasCervOutlet" destination="ZH5-NI-OPx" id="ROm-zY-7wm"/>
+                        <outlet property="fasLumbOutlet" destination="0La-Se-ItU" id="OS5-pU-I5P"/>
+                        <outlet property="fasThorOutlet" destination="DEr-sf-rtF" id="2xG-rW-wA0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjg-qW-fr5" sceneMemberID="firstResponder"/>
             </objects>
@@ -757,15 +775,27 @@
                                     </button>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="96X-og-6p2">
                                         <rect key="frame" x="345" y="257" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="neuroLumbAction:" destination="eIN-XN-Qtn" eventType="valueChanged" id="N5Q-A5-KGY"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6co-kI-Rsl">
                                         <rect key="frame" x="345" y="116" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="neuroCervAction:" destination="eIN-XN-Qtn" eventType="valueChanged" id="9SW-YJ-CxC"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CMd-nx-nB6">
                                         <rect key="frame" x="345" y="186" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="neuroThorAction:" destination="eIN-XN-Qtn" eventType="valueChanged" id="qoe-uJ-EDR"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0VF-z0-c9v">
                                         <rect key="frame" x="345" y="46" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="neuroBulbAction:" destination="eIN-XN-Qtn" eventType="valueChanged" id="QEW-iE-c9l"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -814,6 +844,12 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="neuroBulbOutlet" destination="0VF-z0-c9v" id="LVz-qE-bCA"/>
+                        <outlet property="neuroCervOutlet" destination="6co-kI-Rsl" id="Xyq-Nk-OJh"/>
+                        <outlet property="neuroLumbOutlet" destination="96X-og-6p2" id="Bnv-XL-Yit"/>
+                        <outlet property="neuroThorOutlet" destination="CMd-nx-nB6" id="g17-hl-TwN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Std-fN-sLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
