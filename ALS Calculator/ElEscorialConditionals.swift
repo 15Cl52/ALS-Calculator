@@ -1,71 +1,94 @@
-////
-////  ElEscorialConditionals.swift
-////  ALS Calculator
-////
-////  Created by Cassandra Lam on 2018-08-08.
-////  Copyright © 2018 Cassandra Lam. All rights reserved.
-////
-//
-//import Foundation
-//
-////true == 1, false == 0
-//
-////create a matrix ("uiTable") to represent input table UI as seen below..
-///*                      | UMN      |  LMN  |  fib.../PSW | fascic... | neur...denervation |
-// bulbar                 |  R0,C0   | R0,C1 |       ?     |       ?   |       R0, C4       |
-// cervical               |  R1,C0   |   ?   |       ?     |       ?   |       ?            |
-// thoracic               |  R2,C0   |   ?   |       ?     |       ?   |       ?            |
-// lumbosacral            |  R3,C0   |   ?   |       ?     |       ?   |       ?            |
-//
-// family-history...      |  R?,C?   |   ?   |       ?     |       ?   |       ?            |
-// UMN-rostral_LMN...     |  R?,C?   |   ?   |       ?     |       ?   |       ?            |
-// */
-//
-///* will use a separate matrix for the el escorial algorithms
-//
-// */
-//
-//let row = 4 //rows
+
+import Foundation
+
+//true == 1, false == 0
+
+//create a matrix ("uiTable") to represent input table UI as seen below..
+/*                      | UMN      |  LMN  |  fib.../PSW | fascic... | neur...denervation |
+ bulbar                 |  R0,C0   | R0,C1 |       ?     |       ?   |       R0, C4       |
+ cervical               |  R1,C0   |   ?   |       ?     |       ?   |       ?            |
+ thoracic               |  R2,C0   |   ?   |       ?     |       ?   |       ?            |
+ lumbosacral            |  R3,C0   |   ?   |       ?     |       ?   |       ?            |
+
+ family-history...      |  R?,C?   |   ?   |       ?     |       ?   |       ?            |
+ UMN-rostral_LMN...     |  R?,C?   |   ?   |       ?     |       ?   |       ?            |
+ */
+
+/* will use a separate matrix for the el escorial algorithms
+
+ */
+
+let row = 4 //rows
 //let col = 5 // cols
-////Make 4x5 matrix:
+//Make 4x5 matrix:
 //var uiTable = [[Bool]](repeating: [Bool](repeating: false, count: col), count: row) //create uiTable matrix (holds input values)
-//
-//
-//var umnUICol = [Bool](repeating: false, count: row) //initialize umnUICol array (later fill with uiTable col), makes 1x4 array
-//var lmnUICol = [Bool](repeating: false, count: row)
-//var pswUICol = [Bool](repeating: false, count: row)
-//var fasUICol = [Bool](repeating: false, count: row)
-//var neuUICol = [Bool](repeating: false, count: row)
-//
-////Fill each col with whatever the table inputs are:
-//func fillColArrs(uiTable: [[Bool]]){
-//    for i in 0..<row {    //goes through uiTable row by row
-//        umnUICol.insert(uiTable[i][0], at: 0) //fill umnUICol array with first col of uiTable matrix
-//        lmnUICol.insert(uiTable[i][1], at: 0)
-//        pswUICol.insert(uiTable[i][2], at: 0)
-//        fasUICol.insert(uiTable[i][3], at: 0)
-//        neuUICol.insert(uiTable[i][4], at: 0)
-//    }
-//}
-//
-////******************************** Setting up inputs - part 1 ******************************************
-//
-//
-///* Create function that takes in specific region and 1) tells you the region in which it is present ('TRUE'), then passes info along....
-// // OKAY just try and do one case and theN make a function to duplicate!!
-// */
-//
-////UMN + LMN:
-//var bothUmnLmn = [Bool](repeating: false, count: col)
-//
-//for i in 0..<col {
-//    if(umnUICol[i] && lmnUICol[i] == true){
-//        bothUmnLmn[i] = true
-//    }
-//}
-//
-////The following 3 for statements are a recreation of the excel alogarithms created for UMN>=LMN case:
-////1. UMN >= LMN (col 1):
+
+
+//var umnSwitchStates = [Bool](repeating: false, count: 6) //6 switches total on UMN view controller
+//var lmnSwitchStates = [Bool](repeating: false, count: 4)
+//var fibSwitchStates = [Bool](repeating: false, count: 4)
+//var fasSwitchStates = [Bool](repeating: false, count: 4)
+//var neuroSwitchStates = [Bool](repeating: false, count: 4)
+
+//******************************** Setting up inputs - part 1 ******************************************
+
+func numberOfRegions(symptomArray: inout [Bool], locationNumber: Int) -> Int{
+    //Counts how many 'true' values are in a symptomArray.
+    var regionCount = 0
+    for i in 0..<locationNumber {
+        if(symptomArray[i] == true){
+            regionCount = regionCount + 1
+        }
+    }
+    print(regionCount) //delete later
+    return regionCount
+}
+
+var bothUmnLmn = [Bool](repeating: false, count: row) //can access this property of the Result class later in another class!
+
+var greaterUmn = [Bool](repeating: false, count: row) //UMN>=LMN algorithm previously created (returns true or false)
+var greaterUmnBlank = [Bool](repeating: false, count: row) //UMN>=LMN algorithm previously created (returns true, false or blank)
+
+//UMN + LMN:
+class Result {
+    
+    
+    
+    
+    init() {
+        // 1. Calculate number of times when umn and lmn are both true, number of times when umn is true, and number of times lmn is true.
+        for i in 0..<4 {
+            if(umnSwitchStates[i] == true && lmnSwitchStates[i] == true){
+                bothUmnLmn[i] = true
+            } else{
+                bothUmnLmn[i] = false
+            }
+        }
+        
+        var umnLmnRegion = numberOfRegions(symptomArray: &bothUmnLmn, locationNumber: 4) //int type
+        var umnRegion = numberOfRegions(symptomArray: &umnSwitchStates, locationNumber: 4)
+        var lmnRegion = numberOfRegions(symptomArray: &lmnSwitchStates, locationNumber: 4)
+        
+        //Gets number of regions/instances where umn array has a true value stored - number of regions/instances where umn array has a true value stored without accounting for the bulbar region
+        var umnNoBulbRegion = umnRegion - numberOfRegions(symptomArray: &umnSwitchStates, locationNumber: 1) //int type
+        var lmnNoBulbRegion = lmnRegion - numberOfRegions(symptomArray: &lmnSwitchStates, locationNumber: 1)
+        
+        // 2. Determine if result is 'Definite'.
+        var finalResult = 0; //represents if a result has been found/calculated yet
+        
+//        //=IF( OR(AND($J$3=TRUE,$J$4=TRUE,$J$5=TRUE),AND($K$2=TRUE,$L$2=TRUE,$K$7>1,$L$7>1) ), "Definite", "")
+        if(bothUmnLmn[1] == true && bothUmnLmn[2] == true && bothUmnLmn[3] == true || umnSwitchStates[0] == true && lmnSwitchStates[0] == true && umnNoBulbRegion > 1 && lmnNoBulbRegion > 1){
+            
+            finalResult = 1
+            print("Definite")
+        } else{ print("N/A") }
+        
+    }
+    
+    
+}
+//The following 3 for statements are a recreation of the excel alogarithms created for UMN>=LMN case:
+//1. UMN >= LMN (col 1):
 //var moreUmn = [Bool](repeating: false, count: col) //UMN>=LMN algorithm previously created (returns true or false)
 //var moreUmnBlk = [Bool](repeating: false, count: col) //UMN>=LMN algorithm previously created (returns true, false or blank)
 //
@@ -74,7 +97,7 @@
 //        moreUmn[i] = false
 //    } else {moreUmn[i] = true}
 //}
-//
+
 ////2. UMN >= LMN (col 2):
 //for i in 0..<col {
 //    //=IF(AND($M2=TRUE,$B2=FALSE,$C2=FALSE),"BLANK","")

@@ -20,37 +20,51 @@ class UmnViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    //Store current switch bool states in an array designated for the umn view controller only:
-    var umnSwitchStates = [Bool](repeating: false, count: 6) //6 switches total on UMN view controller
-    
     @IBOutlet weak var umnBulbOutlet: UISwitch!
     @IBAction func umnBulbAction(_ sender: UISwitch) {
         checkSwitch(switchOutlet: umnBulbOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Bulb)   //stores the current bulbar switch bool state to array umnSwitchStates
+        
+        numberOfRegions(symptomArray: &umnSwitchStates, locationNumber: 4) //locationNumber = number of certain locations (bulb, cerv, thor and lumb = 4)
+        
     }
 
     @IBOutlet weak var umnCervOutlet: UISwitch!
     @IBAction func umnCervAction(_ sender: UISwitch) {
         checkSwitch(switchOutlet: umnCervOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Cerv)
+        
+        numberOfRegions(symptomArray: &umnSwitchStates, locationNumber: 4)
+
     }
 
     @IBOutlet weak var umnThorOutlet: UISwitch!
     @IBAction func umnThorAction(_ sender: UISwitch) {
         checkSwitch(switchOutlet: umnThorOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Thor)
+        
+        numberOfRegions(symptomArray: &umnSwitchStates, locationNumber: 4)
+    
     }
 
     @IBOutlet weak var umnLumbOutlet: UISwitch!
     @IBAction func umnLumbAction(_ sender: UISwitch) {
         checkSwitch(switchOutlet: umnLumbOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Lumb)
+        
+        numberOfRegions(symptomArray: &umnSwitchStates, locationNumber: 4)
     }
 
     @IBOutlet weak var umnGeneOutlet: UISwitch!
     @IBAction func umnGeneAction(_ sender: UISwitch) {
         checkSwitch(switchOutlet: umnGeneOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Gene)
+        
+        numberOfRegions(symptomArray: &umnSwitchStates, locationNumber: 4)
+
     }
 
     @IBOutlet weak var umnRosOutlet: UISwitch!
     @IBAction func umnRosAction(_ sender: UISwitch) {
         checkSwitch(switchOutlet: umnRosOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Ros)
+        
+        numberOfRegions(symptomArray: &umnSwitchStates, locationNumber: 4)
+
     }
 
     

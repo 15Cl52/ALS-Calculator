@@ -14,6 +14,7 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +22,6 @@ class ResultViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
 
 
 }
