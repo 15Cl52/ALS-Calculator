@@ -30,11 +30,11 @@ func checkSwitch (switchOutlet: UISwitch, symptomArray: inout [Bool], symptomLoc
 
     if switchOutlet.isOn == true {
         symptomArray[symptomLocation.rawValue] = true   //depending on switch, bool value is placed at corresponding array index
-        print(symptomArray) //delete later
+        //print(symptomArray) //delete later
     }
     else{
         symptomArray[symptomLocation.rawValue] = false
-        print(symptomArray) //delete later
+        //print(symptomArray) //delete later
     }
 
 }
