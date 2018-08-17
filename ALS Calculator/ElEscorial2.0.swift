@@ -85,8 +85,6 @@ func calculateResultEscorial() -> String{
         }
     }
 
-
-
     // D. Find the first non-blank value (either 'true' or 'false') and returns it as the UMN>=LMN state. If they are all blank values, "n/a" is the UMN>=LMN state.
 
     for i in 0..<row {

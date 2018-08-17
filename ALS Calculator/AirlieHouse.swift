@@ -16,9 +16,9 @@ import Foundation
 
 //Global Variables:
 
-var airlieDenervation = [Bool](repeating: false, count: row)
+var airlieDenervation = [Bool](repeating: false, count: row) //Represents "Active +Chronic Denervation" col of Airlie House criteria.
 
-var airlieDenRegion: Int = numberOfRegions(symptomArray: &airlieDenervation, indexNumber: 4)
+var airlieDenRegion: Int = numberOfRegions(symptomArray: &airlieDenervation, indexNumber: 4) //Represents "# of Regions" cell of Airlie House criteria.
 
 var finalResultAirlie: Int = 0 //represents if a result has been found/calculated yet
 
