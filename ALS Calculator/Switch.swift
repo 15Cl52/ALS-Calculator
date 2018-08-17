@@ -40,6 +40,21 @@ func storeSwitch (switchOutlet: UISwitch, symptomArray: inout [Bool], symptomLoc
 }
 
 
+func numberOfRegions(symptomArray: inout [Bool], indexNumber: Int) -> Int{
+    //Counts how many 'true' values are in a symptomArray.
+    //locationNumber == how deep into the array you want to look into (ie look into the array until the element at 'indexNumber' index)
+    
+    var regionCount = 0
+    for i in 0..<indexNumber {
+        if(symptomArray[i] == true){
+            regionCount = regionCount + 1
+        }
+    }
+    //print(regionCount) //delete later
+    return regionCount
+}
+
+
 
 
 

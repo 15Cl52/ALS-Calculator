@@ -24,8 +24,8 @@ class ResultViewController: UIViewController {
     
     
 
-    var boolGot = CalculateResult()
-    var resultString = GetFinalResult(boolFound: boolGot)
+   // var boolGot = calculateResultEscorial()
+   // var resultString = getResultEscorial(boolFound: boolGot)
     
 
 }
