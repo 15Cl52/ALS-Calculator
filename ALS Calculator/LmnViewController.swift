@@ -26,22 +26,22 @@ class LmnViewController: UIViewController {
     
     @IBOutlet weak var lmnBulbOutlet: UISwitch!
     @IBAction func lmnBulbAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: lmnBulbOutlet, symptomArray: &lmnSwitchStates, symptomLocation: typeOfSwitch.Bulb)
+        storeSwitch(switchOutlet: lmnBulbOutlet, symptomArray: &lmnSwitchStates, symptomLocation: typeOfSwitch.Bulb)
     }
     
     @IBOutlet weak var lmnCervOutlet: UISwitch!
     @IBAction func lmnCervAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: lmnCervOutlet, symptomArray: &lmnSwitchStates, symptomLocation: typeOfSwitch.Cerv)
+        storeSwitch(switchOutlet: lmnCervOutlet, symptomArray: &lmnSwitchStates, symptomLocation: typeOfSwitch.Cerv)
     }
     
     @IBOutlet weak var lmnThorOutlet: UISwitch!
     @IBAction func lmnThorAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: lmnThorOutlet, symptomArray: &lmnSwitchStates, symptomLocation: typeOfSwitch.Thor)
+        storeSwitch(switchOutlet: lmnThorOutlet, symptomArray: &lmnSwitchStates, symptomLocation: typeOfSwitch.Thor)
     }
     
     @IBOutlet weak var lmnLumbOutlet: UISwitch!
     @IBAction func lmnLumbAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: lmnLumbOutlet, symptomArray: &lmnSwitchStates, symptomLocation: typeOfSwitch.Lumb)
+        storeSwitch(switchOutlet: lmnLumbOutlet, symptomArray: &lmnSwitchStates, symptomLocation: typeOfSwitch.Lumb)
     }
     
 }

@@ -1,4 +1,4 @@
-
+/*
 import Foundation
 
 //true == 1, false == 0
@@ -38,7 +38,7 @@ func numberOfRegions(symptomArray: inout [Bool], locationNumber: Int) -> Int{
 }
 
 
-class Result {
+struct Result {
 
     init() {
     //******************************** Setting up inputs - part 1 ******************************************
@@ -54,11 +54,18 @@ class Result {
         var lmnNoBulbRegion = lmnRegion - numberOfRegions(symptomArray: &lmnSwitchStates, locationNumber: 1)
         
         var greaterUmn = [Bool](repeating: false, count: row) //UMN>=LMN algorithm previously created (returns true or false)
-
+        var greaterUmnBlank = [Int](repeating: 0, count: row)
+        
+        var greaterUmnCheckCount = 0 //false
+        var bulbarBlank = 0 //
+        
         var finalResult = 0 //represents if a result has been found/calculated yet
+
+        var boolFound: Bool
 
         
 
+        
         // A. Initialize bothUmnLmn array. (Calculate number of times when umn and lmn are both true, number of times when umn is true, and number of times lmn is true.)
         
         for i in 0..<row {
@@ -67,24 +74,52 @@ class Result {
             } else{ bothUmnLmn[i] = false }
         }
         
-        // B. The following 3 for statements are a recreation of the excel alogarithms created for UMN>=LMN case:
-        // B.i. Initialize greaterUmn array:
+        // B. Initialize greaterUmn array.
 
         for i in 0..<row {
-            if(umnSwitchStates[i] == true && lmnSwitchStates[i] == true || umnSwitchStates[i] == true && lmnSwitchStates[i] == false){ 
+            if(umnSwitchStates[i] == true && lmnSwitchStates[i] == true || umnSwitchStates[i] == true && lmnSwitchStates[i] == false){
                 greaterUmn[i] = true
             } else{ greaterUmn[i] = false }
         }
         
-        // 2. UMN >= LMN (col 2):
-        //for i in 0..<col {
-        //    //=IF(AND($M2=TRUE,$B2=FALSE,$C2=FALSE),"BLANK","")
-        //    if(moreUmn[i] == true && umnUICol[i] == false && lmnUICol[i] == false){
-        //        moreUmnBlk[i] = true
-        //    }
-        //}
-        //
-        ////3. Right-most col of El Escorial table:
+        // C. Initialize greaterUmnBlank array.
+            //let blank = 2, true = 1, false = 0
+        
+        for i in 0..<row {
+            if(umnSwitchStates[i] == false && lmnSwitchStates[i] == true){
+                greaterUmnBlank[i] = 0 //false
+            }
+            if(umnSwitchStates[i] == true && lmnSwitchStates[i] == true || umnSwitchStates[i] == true && lmnSwitchStates[i] == false){
+                 greaterUmnBlank[i] = 1 //true
+                
+            }
+            if(umnSwitchStates[i] == false && lmnSwitchStates[i] == false){
+                greaterUmnBlank[i] = 2 //blank
+            }
+        }
+        
+        
+        // D. Find the first non-blank value (either 'true' or 'false'). The 'boolFound' is then used as the UMN>=LMN state.
+        for i in 0..<row {
+            //If the element in the array does NOT have a blank...
+            if(greaterUmnBlank[i] != 2){
+                if(greaterUmnBlank[i] == 0){
+                    boolFound = false
+                }else{
+                    boolFound = true
+                }
+            }
+        }
+        
+        
+        
+
+
+
+        
+   
+        
+        
 
         
         
@@ -104,20 +139,21 @@ class Result {
     //2. DETERMINE IF RESULT IS "PROBABLE".
         
          //=IF(AND($K$6>1,$L$6>1,$J$8="",$O$8=TRUE,$B$7=TRUE),"Probable", "")
-         if(umnRegion > 1 && lmnRegion > 1 && finalResult == 0 && ){
+         if(umnRegion > 1 && lmnRegion > 1 && finalResult == 0 && boolFound == true && umnSwitchStates[5] == true){
+            finalResult = 1
             print("Probable")
          }
    
         
         
-        
-        
-        
-        
-        
-        
     }
 }
+        
+        
+        
+        
+        
+
 
 
 
@@ -166,3 +202,5 @@ class Result {
 //
  
  
+ 
+ /*

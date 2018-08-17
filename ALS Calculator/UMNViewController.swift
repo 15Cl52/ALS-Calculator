@@ -24,53 +24,38 @@ class UmnViewController: UIViewController {
     
     @IBOutlet weak var umnBulbOutlet: UISwitch!
     @IBAction func umnBulbAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: umnBulbOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Bulb)   //stores the current bulbar switch bool state to array umnSwitchStates
-        
-        //numberOfRegions(symptomArray: &umnSwitchStates, locationNumber: 4) //locationNumber = number of certain locations (bulb, cerv, thor and lumb = 4)
-        print(umnLmnRegion, umnRegion, umnNoBulbRegion)
+        //stores the current bulbar switch bool state to array umnSwitchStates
+        storeSwitch(switchOutlet: umnBulbOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Bulb)
     }
 
     @IBOutlet weak var umnCervOutlet: UISwitch!
     @IBAction func umnCervAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: umnCervOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Cerv)
+        storeSwitch(switchOutlet: umnCervOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Cerv)
         
-        ////numberOfRegions(symptomArray: &umnSwitchStates, locationNumber: 4)
-         print(umnLmnRegion, umnRegion, umnNoBulbRegion)
     }
 
     @IBOutlet weak var umnThorOutlet: UISwitch!
     @IBAction func umnThorAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: umnThorOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Thor)
-        
-        //numberOfRegions(symptomArray: &umnSwitchStates, locationNumber: 4)
-        print(umnLmnRegion, umnRegion, umnNoBulbRegion)
+        storeSwitch(switchOutlet: umnThorOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Thor)
+ 
     }
 
     @IBOutlet weak var umnLumbOutlet: UISwitch!
     @IBAction func umnLumbAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: umnLumbOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Lumb)
-        
-        //numberOfRegions(symptomArray: &umnSwitchStates, locationNumber: 4)
-         print(umnLmnRegion, umnRegion, umnNoBulbRegion)
+        storeSwitch(switchOutlet: umnLumbOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Lumb)
+ 
     }
 
     @IBOutlet weak var umnGeneOutlet: UISwitch!
     @IBAction func umnGeneAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: umnGeneOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Gene)
+        storeSwitch(switchOutlet: umnGeneOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Gene)
         
-        //numberOfRegions(symptomArray: &umnSwitchStates, locationNumber: 4)
-         print(umnLmnRegion, umnRegion, umnNoBulbRegion)
-
     }
 
     @IBOutlet weak var umnRosOutlet: UISwitch!
     @IBAction func umnRosAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: umnRosOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Ros)
+        storeSwitch(switchOutlet: umnRosOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Ros)
         
-        //numberOfRegions(symptomArray: &umnSwitchStates, locationNumber: 4)
-         print(umnLmnRegion, umnRegion, umnNoBulbRegion)
-
     }
-
     
 }

@@ -25,22 +25,22 @@ class FasViewController: UIViewController {
     
     @IBOutlet weak var fasBulbOutlet: UISwitch!
     @IBAction func fasBulbAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: fasBulbOutlet, symptomArray: &fasSwitchStates, symptomLocation: typeOfSwitch.Bulb)
+        storeSwitch(switchOutlet: fasBulbOutlet, symptomArray: &fasSwitchStates, symptomLocation: typeOfSwitch.Bulb)
     }
     
     @IBOutlet weak var fasCervOutlet: UISwitch!
     @IBAction func fasCervAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: fasCervOutlet, symptomArray: &fasSwitchStates, symptomLocation: typeOfSwitch.Cerv)
+        storeSwitch(switchOutlet: fasCervOutlet, symptomArray: &fasSwitchStates, symptomLocation: typeOfSwitch.Cerv)
     }
     
     @IBOutlet weak var fasThorOutlet: UISwitch!
     @IBAction func fasThorAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: fasThorOutlet, symptomArray: &fasSwitchStates, symptomLocation: typeOfSwitch.Thor)
+        storeSwitch(switchOutlet: fasThorOutlet, symptomArray: &fasSwitchStates, symptomLocation: typeOfSwitch.Thor)
     }
     
     @IBOutlet weak var fasLumbOutlet: UISwitch!
     @IBAction func fasLumbAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: fasLumbOutlet, symptomArray: &fasSwitchStates, symptomLocation: typeOfSwitch.Lumb)
+        storeSwitch(switchOutlet: fasLumbOutlet, symptomArray: &fasSwitchStates, symptomLocation: typeOfSwitch.Lumb)
     }
 
 

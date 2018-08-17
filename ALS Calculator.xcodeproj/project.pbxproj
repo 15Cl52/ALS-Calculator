@@ -17,6 +17,7 @@
 		11B96EFF20F2F837004C0C02 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11B96EFE20F2F837004C0C02 /* Default-568h@2x.png */; };
 		11CA91D820F2FEF400D6A859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11CA91D720F2FEF400D6A859 /* Main.storyboard */; };
 		11CA91F920F4EFFA00D6A859 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA91F820F4EFFA00D6A859 /* PageViewController.swift */; };
+		11D4201C2126520E0089A92F /* ElEscorial2.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D4201B2126520E0089A92F /* ElEscorial2.0.swift */; };
 		11D6C48B20A6661700F28E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D6C48A20A6661700F28E94 /* AppDelegate.swift */; };
 		11D6C49220A6661900F28E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D6C49120A6661900F28E94 /* Assets.xcassets */; };
 		11D6C49520A6661900F28E94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D6C49320A6661900F28E94 /* LaunchScreen.storyboard */; };
@@ -34,6 +35,7 @@
 		11B96EFE20F2F837004C0C02 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		11CA91D720F2FEF400D6A859 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		11CA91F820F4EFFA00D6A859 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		11D4201B2126520E0089A92F /* ElEscorial2.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElEscorial2.0.swift; sourceTree = "<group>"; };
 		11D6C48720A6661700F28E94 /* ALS Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ALS Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D6C48A20A6661700F28E94 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11D6C49120A6661900F28E94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				1192E8AB20F8C0DD008B4B48 /* ResultViewController.swift */,
 				110F658C211D27060084864E /* Switch.swift */,
 				11ED7F17211AD53800E765BA /* ElEscorialConditionals.swift */,
+				11D4201B2126520E0089A92F /* ElEscorial2.0.swift */,
 				11D6C49120A6661900F28E94 /* Assets.xcassets */,
 				11D6C49320A6661900F28E94 /* LaunchScreen.storyboard */,
 			);
@@ -170,6 +173,7 @@
 				1192E8AC20F8C0DD008B4B48 /* ResultViewController.swift in Sources */,
 				1192E8A820F8BDE9008B4B48 /* FasViewController.swift in Sources */,
 				11CA91F920F4EFFA00D6A859 /* PageViewController.swift in Sources */,
+				11D4201C2126520E0089A92F /* ElEscorial2.0.swift in Sources */,
 				11D6C48B20A6661700F28E94 /* AppDelegate.swift in Sources */,
 				1192E8AA20F8BDF2008B4B48 /* NeuroViewController.swift in Sources */,
 				110F658D211D27060084864E /* Switch.swift in Sources */,

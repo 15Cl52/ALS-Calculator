@@ -22,6 +22,10 @@ class ResultViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
 
+    var boolGot = CalculateResult()
+    var resultString = GetFinalResult(boolFound: boolGot)
+    
 
 }

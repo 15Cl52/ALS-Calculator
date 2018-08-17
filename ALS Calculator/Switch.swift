@@ -25,7 +25,7 @@ var fasSwitchStates = [Bool](repeating: false, count: 4)
 var neuroSwitchStates = [Bool](repeating: false, count: 4)
 
 
-func checkSwitch (switchOutlet: UISwitch, symptomArray: inout [Bool], symptomLocation: typeOfSwitch){
+func storeSwitch (switchOutlet: UISwitch, symptomArray: inout [Bool], symptomLocation: typeOfSwitch){
     //Global function that checks switch state and stores that value in desired array that holds all switch values for that view controller
 
     if switchOutlet.isOn == true {

@@ -24,22 +24,22 @@ class FibViewController: UIViewController {
 
     @IBOutlet weak var fibBulbOutlet: UISwitch!
     @IBAction func fibBulbAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: fibBulbOutlet, symptomArray: &fibSwitchStates, symptomLocation: typeOfSwitch.Bulb)
+        storeSwitch(switchOutlet: fibBulbOutlet, symptomArray: &fibSwitchStates, symptomLocation: typeOfSwitch.Bulb)
     }
     
     @IBOutlet weak var fibCervOutlet: UISwitch!
     @IBAction func fibCervAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: fibCervOutlet, symptomArray: &fibSwitchStates, symptomLocation: typeOfSwitch.Cerv)
+        storeSwitch(switchOutlet: fibCervOutlet, symptomArray: &fibSwitchStates, symptomLocation: typeOfSwitch.Cerv)
     }
     
     @IBOutlet weak var fibThorOutlet: UISwitch!
     @IBAction func fibThorAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: fibThorOutlet, symptomArray: &fibSwitchStates, symptomLocation: typeOfSwitch.Thor)
+        storeSwitch(switchOutlet: fibThorOutlet, symptomArray: &fibSwitchStates, symptomLocation: typeOfSwitch.Thor)
     }
     
     @IBOutlet weak var fibLumbOutlet: UISwitch!
     @IBAction func fibLumbAction(_ sender: UISwitch) {
-        checkSwitch(switchOutlet: fibLumbOutlet, symptomArray: &fibSwitchStates, symptomLocation: typeOfSwitch.Lumb)
+        storeSwitch(switchOutlet: fibLumbOutlet, symptomArray: &fibSwitchStates, symptomLocation: typeOfSwitch.Lumb)
     }
 
 }
