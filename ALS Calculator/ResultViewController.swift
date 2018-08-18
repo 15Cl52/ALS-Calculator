@@ -10,11 +10,20 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+   
+    @IBOutlet weak var EscorialLabel: UILabel!
+    @IBOutlet weak var AirlieLabel: UILabel!
+    @IBOutlet weak var AwajiLabel: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        EscorialLabel.text = escorialResult
+        AirlieLabel.text = airlieResult
+        AwajiLabel.text = awajiResult
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,9 +32,4 @@ class ResultViewController: UIViewController {
     }
     
     
-
-   // var boolGot = calculateResultEscorial()
-   // var resultString = getResultEscorial(boolFound: boolGot)
-    
-
 }

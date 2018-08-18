@@ -770,6 +770,8 @@
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="calculateAction:" destination="eIN-XN-Qtn" eventType="touchUpInside" id="QoF-SL-R9i"/>
+                                            <action selector="calculateButton:" destination="eIN-XN-Qtn" eventType="touchUpInside" id="dqK-W8-Z5w"/>
                                             <segue destination="NmA-mD-8JF" kind="show" id="FE8-Es-0xn"/>
                                         </connections>
                                     </button>
@@ -845,6 +847,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="calculateOutlet" destination="cJR-4r-Zip" id="h31-l9-YHr"/>
                         <outlet property="neuroBulbOutlet" destination="0VF-z0-c9v" id="LVz-qE-bCA"/>
                         <outlet property="neuroCervOutlet" destination="6co-kI-Rsl" id="Xyq-Nk-OJh"/>
                         <outlet property="neuroLumbOutlet" destination="96X-og-6p2" id="Bnv-XL-Yit"/>
@@ -991,6 +994,11 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="AirlieLabel" destination="hdZ-SK-Gqc" id="YU2-Ob-aWW"/>
+                        <outlet property="AwajiLabel" destination="wX7-Aw-zeD" id="OZy-6r-Fd6"/>
+                        <outlet property="EscorialLabel" destination="CBs-Da-Zad" id="WnJ-Ry-mcx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ARQ-xi-hkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

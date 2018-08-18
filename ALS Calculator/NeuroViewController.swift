@@ -8,11 +8,18 @@
 
 import UIKit
 
+
+var boolGot: String = ""
+var escorialResult: String = ""
+var airlieResult: String = ""
+var awajiResult: String = ""
+
+
 class NeuroViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -20,7 +27,6 @@ class NeuroViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     
     @IBOutlet weak var neuroBulbOutlet: UISwitch!
@@ -44,5 +50,19 @@ class NeuroViewController: UIViewController {
     }
     
 
+    
+    @IBOutlet weak var calculateOutlet: UIButton!
+    @IBAction func calculateAction(_ sender: UIButton) {
+        boolGot = calculateResultEscorial()
+        calculateResultAirlie()
+        calculateResultAwaji()
+        
+        escorialResult = getResultEscorial(boolFound: boolGot)
+        airlieResult = getResultAirlie(boolFound: boolGot)
+        awajiResult = getResultAwaji(boolFound: boolGot)
+        
+    }
+    
+    
 
 }
