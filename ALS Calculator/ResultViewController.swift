@@ -8,28 +8,35 @@
 
 import UIKit
 
-class ResultViewController: UIViewController {
 
-   
-    @IBOutlet weak var EscorialLabel: UILabel!
-    @IBOutlet weak var AirlieLabel: UILabel!
-    @IBOutlet weak var AwajiLabel: UILabel!
-    
-    
+var boolGot: String = ""
+var escorialResult: String = ""
+var airlieResult: String = ""
+var awajiResult: String = ""
+
+
+class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        EscorialLabel.text = escorialResult
-        AirlieLabel.text = airlieResult
-        AwajiLabel.text = awajiResult
+        //EscorialLabel.text = escorialResult
+        
+        //AirlieLabel.text = airlieResult   //UNCOMMENT
+        //AwajiLabel.text = awajiResult     //UNCOMMENT
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
+    @IBOutlet weak var EscorialLabel: UILabel!
+    @IBOutlet weak var AirlieLabel: UILabel!
+    @IBOutlet weak var AwajiLabel: UILabel!
     
     
 }

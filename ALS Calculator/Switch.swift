@@ -33,11 +33,13 @@ func storeSwitch (switchOutlet: UISwitch, symptomArray: inout [Bool], symptomLoc
 
     if switchOutlet.isOn == true {
         symptomArray[symptomLocation.rawValue] = true   //depending on switch, bool value is placed at corresponding array index
-        //print(symptomArray) //delete later
+   
+        //print(symptomArray) //DELETE
     }
     else{
         symptomArray[symptomLocation.rawValue] = false
-        //print(symptomArray) //delete later
+        
+        //print(symptomArray) //DELETE
     }
 
 }
@@ -56,8 +58,59 @@ func numberOfRegions(symptomArray: inout [Bool], indexNumber: Int) -> Int{
     
     return regionCount
     
-    
+    //print(regionCount) //DELETE
 }
+
+
+//true == 1, false == 0
+
+//create a matrix ("uiTable") to represent input table UI as seen below..
+/*                      | UMN      |  LMN  |  fib.../PSW | fascic... | neur...denervation |
+ bulbar                 |  R0,C0   | R0,C1 |       ?     |       ?   |       R0, C4       |
+ cervical               |  R1,C0   |   ?   |       ?     |       ?   |       ?            |
+ thoracic               |  R2,C0   |   ?   |       ?     |       ?   |       ?            |
+ lumbosacral            |  R3,C0   |   ?   |       ?     |       ?   |       ?            |
+ 
+ family-history...      |  R4,C?   |   ?   |       ?     |       ?   |       ?            |
+ UMN-rostral_LMN...     |  R5,C?   |   ?   |       ?     |       ?   |       ?            |
+ */
+
+
+let row = 4 //rows
+
+//var umnSwitchStates = [Bool](repeating: false, count: 6) //6 switches total on UMN view controller
+//var lmnSwitchStates = [Bool](repeating: false, count: 4)
+//var fibSwitchStates = [Bool](repeating: false, count: 4)
+//var fasSwitchStates = [Bool](repeating: false, count: 4)
+//var neuroSwitchStates = [Bool](repeating: false, count: 4)
+
+
+//Global Variables:
+
+var umnGeneIdentified: Bool = umnSwitchStates[4] //Represents "Gene Identified Family History with Progressive Symptoms" cell
+var umnSignRostral: Bool = umnSwitchStates[5] //Represents "UMN signs rostral to (above) the LMN signs" cell
+
+//Stores element as 'true' if umn == true and lmn == true in respective bulbar, cervical, thoracic,... switches:
+var bothUmnLmn = [Bool](repeating: false, count: row) //Represents "UMN+LMN" column
+
+//Gets number of regions/instances where umn array has a true value stored:
+var umnLmnRegion: Int = numberOfRegions(symptomArray: &bothUmnLmn, indexNumber: 4)  //Represents "# of Regions" cell for "UMN+LMN" col
+var umnRegion: Int = numberOfRegions(symptomArray: &umnSwitchStates, indexNumber: 4) //Represents "# of Regions" cell for "UMN" col
+var lmnRegion: Int = numberOfRegions(symptomArray: &lmnSwitchStates, indexNumber: 4) //Represents "# of Regions" cell for "LMN" col
+
+//Gets number of regions/instances where umn array has a true value stored - number of regions/instances where umn array has a true value stored without accounting for the bulbar region:
+var umnNoBulbRegion: Int = umnRegion - numberOfRegions(symptomArray: &umnSwitchStates, indexNumber: 1) //Represents "# of Regions" cell for "UMN" col without counting the 'bulbar' cell
+var lmnNoBulbRegion: Int = lmnRegion - numberOfRegions(symptomArray: &lmnSwitchStates, indexNumber: 1)
+
+
+var greaterUmn = [Bool](repeating: false, count: row) //Represents "UMN>=LMN" col
+var greaterUmnBlank = [Int](repeating: 0, count: row) //Used to determine if UMN>=LMN and the special case where UMN and LMN are both false (if both false == blank)
+
+var finalResultEscorial: Int = 0 //represents if a result has been found/calculated yet
+
+
+var boolFound: String = "n/a" //Represents "UMN>=LMN" single cell. Holds either "true", "false" or "n/a"
+
 
 
 

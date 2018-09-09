@@ -26,6 +26,8 @@ class UmnViewController: UIViewController {
     @IBAction func umnBulbAction(_ sender: UISwitch) {
         //stores the current bulbar switch bool state to array umnSwitchStates
         storeSwitch(switchOutlet: umnBulbOutlet, symptomArray: &umnSwitchStates, symptomLocation: typeOfSwitch.Bulb)
+        
+        
     }
 
     @IBOutlet weak var umnCervOutlet: UISwitch!

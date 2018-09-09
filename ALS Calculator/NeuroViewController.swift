@@ -9,12 +9,6 @@
 import UIKit
 
 
-var boolGot: String = ""
-var escorialResult: String = ""
-var airlieResult: String = ""
-var awajiResult: String = ""
-
-
 class NeuroViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -53,13 +47,16 @@ class NeuroViewController: UIViewController {
     
     @IBOutlet weak var calculateOutlet: UIButton!
     @IBAction func calculateAction(_ sender: UIButton) {
-        boolGot = calculateResultEscorial()
+        /*boolGot = calculateResultEscorial()
         calculateResultAirlie()
         calculateResultAwaji()
-        
+
         escorialResult = getResultEscorial(boolFound: boolGot)
         airlieResult = getResultAirlie(boolFound: boolGot)
-        awajiResult = getResultAwaji(boolFound: boolGot)
+        awajiResult = getResultAwaji(boolFound: boolGot)*/
+       
+        //^ KEEP
+
         
     }
     
